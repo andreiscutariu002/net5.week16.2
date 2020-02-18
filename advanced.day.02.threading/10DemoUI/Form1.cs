@@ -11,7 +11,7 @@
     public partial class Form1 : Form
     {
         private const string Path =
-            @"d:\projects\wantsome\wantsome-dotnet-public\advanced.day.02.threading\cars.csv";
+            @"c:\Users\ascutariu\Projects\wantsome\net5.week16.2\advanced.day.02.threading\cars.csv";
 
         public Form1()
         {
@@ -61,7 +61,7 @@
         {
             this.contentTxb.AppendText($"{s}{Environment.NewLine}");
 
-            //Thread.Sleep(TimeSpan.FromSeconds(3)); // simulate other work
+            Thread.Sleep(TimeSpan.FromMilliseconds(10)); // simulate other work
         }
     }
 }
